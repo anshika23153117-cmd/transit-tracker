@@ -11,9 +11,9 @@ const app = express();
 connectDB();
 
 //middleware
-app.use(cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:5173'
-})); //enable cors so frontend can talk to us
+ app.use(cors(
+//     // origin: process.env.FRONTEND_URL || 'http://localhost:5173'
+)); //enable cors so frontend can talk to us
 app.use(express.json());// allow server to handle json data 
 
 if (!process.env.AIRLABS_API_KEY) {
