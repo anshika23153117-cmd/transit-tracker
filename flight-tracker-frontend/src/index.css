@@ -1,0 +1,7 @@
+html, body, #root {
+  margin: 0;           /* 1. Removes the default white gap around the edges */
+  padding: 0;          /* 2. Ensures no internal spacing */
+  height: 100vh;       /* 3. Forces the height to be 100% of the screen */
+  width: 100vw;        /* 4. Forces the width to be 100% of the screen */
+  overflow: hidden;    /* 5. Prevents annoying scrollbars if the map is 1px too big */
+}
